@@ -2,11 +2,11 @@
 /**
  * You should probably use an autoloader =)
  */
-require_once "Client.php";
-require_once "Requests/Request.php";
-require_once "Requests/DataRequest.php";
-require_once "Requests/LadderRequest.php";
-require_once "Requests/ProfileRequest.php";
+require_once "StarCraftApiClient/Client.php";
+require_once "StarCraftApiClient/Requests/Request.php";
+require_once "StarCraftApiClient/Requests/DataRequest.php";
+require_once "StarCraftApiClient/Requests/LadderRequest.php";
+require_once "StarCraftApiClient/Requests/ProfileRequest.php";
 
 $client = new StarCraftApiClient\Client('...tokenTOKENtoken...');
 
