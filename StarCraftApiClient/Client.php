@@ -133,7 +133,8 @@ class Client
      */
     public function addAchievementsRequest($region)
     {
-        $this->requests['data.achievements'] = new DataRequest($this, 'achievements', $region);
+        $this->requests['data.achievements'] =
+            new DataRequest($this, 'achievements', $region);
     }
 
     /**
@@ -141,7 +142,8 @@ class Client
      */
     public function addRewardsRequest($region)
     {
-        $this->requests['data.rewards'] = new DataRequest($this, 'rewards', $region);
+        $this->requests['data.rewards'] =
+            new DataRequest($this, 'rewards', $region);
     }
 
     /**
