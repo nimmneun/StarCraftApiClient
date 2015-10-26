@@ -1,14 +1,14 @@
 <?php
 /**
- * You should probably use an autoloader =)
+ * @author neun
+ * @since  2015-10-26
  */
-require_once "StarCraftApiClient/Client.php";
-require_once "StarCraftApiClient/Requests/Request.php";
-require_once "StarCraftApiClient/Requests/DataRequest.php";
-require_once "StarCraftApiClient/Requests/LadderRequest.php";
-require_once "StarCraftApiClient/Requests/ProfileRequest.php";
+require_once 'vendor/autoload.php';
 
-$client = new StarCraftApiClient\Client('...tokenTOKENtoken...');
+use StarCraftApiClient\Client;
+
+$apiToken = file_get_contents('conf.txt');
+$client = new Client($apiToken);
 
 $client->addAllProfileRequests(2778901, 'Mamba', 'eu');
 $client->addAllProfileRequests(1283855, 'PuPu', 'eu');

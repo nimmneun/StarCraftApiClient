@@ -1,0 +1,8 @@
+{
+  "name": "nimmneun/StarCraftApiClient",
+  "autoload": {
+    "psr-4": {
+      "StarCraftApiClient\\": "src/StarCraftApiClient/"
+    }
+  }
+}
