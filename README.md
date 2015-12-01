@@ -1,4 +1,7 @@
 # StarCraftApiClient
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/badges/build.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/build-status/master)
+
 Simple API client to fetch results from battle.net's StarCraft API in parallel.
 
 ```php
