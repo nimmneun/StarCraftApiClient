@@ -168,6 +168,7 @@ class Client
      */
     private function hydrateCurlHandles($mh)
     {
+        $chs = [];
         /** @var Requests\Request $request */
         foreach ($this->requests as $id => $request) {
             $chs[$id] = curl_init($request->url());
@@ -175,7 +176,7 @@ class Client
             curl_multi_add_handle($mh, $chs[$id]);
         }
 
-        return isset($chs) ? $chs : [];
+        return $chs;
     }
 
     /**
@@ -242,6 +243,7 @@ class Client
      */
     public function getRequests($path = null)
     {
+        $requests = [];
         if (null === $path) {
             $requests = $this->requests;
         } else {
